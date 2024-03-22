@@ -13,8 +13,12 @@ public class LinearSearch {
     public static int search(int arr[], int x)
     {
         int n = arr.length;
-        // Todo 01: - complete the implementation of linear search and test your code  
-         //         - prvoide asymptotic analysis of the developed solution
-    }
+       for (int i = 0; i < n; i++) {
+            if (arr[i] == x) {
+                return i; // Return the index where the element is found
+            }
+        }
+        return -1; // Return -1 if the element is not found in the array
+        }
     
 }
