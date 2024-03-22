@@ -27,7 +27,20 @@ public class BinarySearch {
         }
         return index;
     }
-    //ToDo 2: Call the above method and test the algorithm  
-    // provide time and space analysis 
+    
+   public class Main {
+    public static void main(String[] args) {
+        int[] sortedArray = {1, 3, 5, 7, 9, 11, 13, 15}; // Example sorted array
+        int key = 7; // Key to search for
 
-}
+        // Call binary search method
+        int index = BinarySearch.runBinarySearchIteratively(sortedArray, key, 0, sortedArray.length - 1);
+
+        // Display result
+        if (index != Integer.MAX_VALUE) {
+            System.out.println("Key found at index: " + index);
+        } else {
+            System.out.println("Key not found in the array.");
+        }
+    }
+   }
